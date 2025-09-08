@@ -19,7 +19,6 @@ const Demo = ({ uiDemo = false }) => {
           cum dolore commodi rem ex perspiciatis beatae unde illo quod, minus
           nesciunt!
         </p>
-
         <div className="flex gap-4">
           <Button primary>Click Here</Button>
           <Button accent>CTA Main</Button>
@@ -33,7 +32,8 @@ const Demo = ({ uiDemo = false }) => {
             sunt, consequatur asperiores.
           </p>
           <div className="flex gap-1.5">
-            <Badge>Ruby on Rails</Badge>
+            <Badge>FPGA</Badge>
+            <Badge>Rails</Badge>
             <Badge>React</Badge>
             <Badge>Ruby</Badge>
           </div>
