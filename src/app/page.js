@@ -1,4 +1,15 @@
-import Demo from "@/components/home/Demo";
+import Hero from "@/components/home/Hero";
+import AboutMe from "@/components/home/AboutMe";
+import ContactLinks from "@/components/home/ContactLinks";
+import Footer from "@/components/home/Footer";
+
 export default function Home() {
-  return <Demo uiDemo />;
+  return (
+    <main className="space-y-32">
+      <Hero />
+      <AboutMe />
+      <ContactLinks />
+      <Footer />
+    </main>
+  );
 }
