@@ -3,9 +3,9 @@ import Card from "../ui/Card";
 
 const AboutMe = () => {
     return (
-        <Container className="bg-surface py-8">
+        <Container className="bg-surface py-8 font-mono">
             <h1 className="text-primary mb-4 text-center text-2xl font-bold">
-                About Me
+                About
             </h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
