@@ -21,7 +21,7 @@ const Button = ({
         rotate: 2,
         transition: { duration: 0.1, ease: "easeOut" },
       }}
-      className={`${primary ? "bg-primary text-background shadow-primary/40 border-primary" : ""} ${accent ? "bg-accent shadow-accent/40 text-background border-accent" : ""} ${tertiary ? "bg-surface shadow-surface/40 border-text/30" : ""} relative cursor-pointer rounded-md border px-4 py-1 font-bold shadow-none hover:shadow-[0_4px_22px] ${className}`}
+      className={`${primary ? "bg-primary text-background shadow-primary/40 border-primary" : ""} ${accent ? "bg-accent shadow-accent/40 text-background border-accent" : ""} ${tertiary ? "bg-surface shadow-surface/40 border-text/30" : ""} relative cursor-pointer rounded-md border px-4 py-1 font-bold transition-shadow duration-200 md:hover:shadow-[0_4px_22px] ${className}`}
     >
       {children}
     </motion.button>
