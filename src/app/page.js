@@ -5,7 +5,7 @@ import Footer from "@/components/home/Footer";
 
 export default function Home() {
   return (
-    <main className="space-y-32">
+    <main className="space-y-64">
       <Hero />
       <AboutMe />
       <ContactLinks />
