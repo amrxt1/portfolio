@@ -3,7 +3,7 @@ import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 import Link from "next/link";
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, className = "", children }) => {
   const {
     id = 1010001,
     slug = "meme",
@@ -18,7 +18,7 @@ const ProjectCard = ({ project }) => {
   } = project;
 
   return (
-    <Card>
+    <Card className={className}>
       <div className="mb-1.75 flex items-end">
         <h1 className="text-primary flex-1 font-mono text-3xl font-bold select-text">
           {title}
@@ -40,6 +40,7 @@ const ProjectCard = ({ project }) => {
       </div>
 
       <p className="text-text/80 text-sm">{details}</p>
+      {children}
     </Card>
   );
 };

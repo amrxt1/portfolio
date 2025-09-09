@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="sticky top-0 z-50 w-full">
+    <div className="sticky top-0 z-999 w-full">
       <Container className="bg-background">
         <nav className="flex justify-end gap-2 pt-2 pb-0.5">
           <Link href={"/projects"}>
