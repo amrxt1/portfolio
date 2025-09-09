@@ -5,7 +5,7 @@ const projectsData = [
     title: "Arm v7",
     desc: "A lightweight ARMv7 CPU core implemented in Verilog.",
     images: ["/project-images/armv7/pc.png"],
-    techUsed: ["verilog"],
+    techUsed: ["Verilog", "FPGA"],
     features: [
       "Implements instruction fetch, decode, and ALU pipeline",
       "Supports a subset of ARM instructions",
