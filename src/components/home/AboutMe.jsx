@@ -7,13 +7,15 @@ const AboutMe = () => {
       <h1 className="text-primary mb-4 text-center text-2xl font-bold">
         About
       </h1>
-      <div className="select-text">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis soluta
-          doloribus assumenda! Tempora itaque est, similique explicabo ullam
-          molestias quidem debitis. Atque quis quisquam ipsa maxime iste
-          obcaecati inventore ipsum.
-        </p>
+      <div className="flex w-full justify-center">
+        <div className="max-w-[500px] select-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis soluta
+            doloribus assumenda! Tempora itaque est, similique explicabo ullam
+            molestias quidem debitis. Atque quis quisquam ipsa maxime iste
+            obcaecati inventore ipsum.
+          </p>
+        </div>
       </div>
     </Container>
   );

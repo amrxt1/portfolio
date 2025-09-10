@@ -8,9 +8,11 @@ const Button = ({
   accent = false,
   tertiary = false,
   className = "",
+  onClick,
 }) => {
   return (
     <motion.button
+      onClick={onClick}
       whileHover={{
         y: -2,
         transition: { duration: 0.2, ease: "easeOut" },

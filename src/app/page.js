@@ -9,7 +9,7 @@ export default function Home() {
     <main className="space-y-64">
       <Hero />
       <AboutMe />
-      <ProjectsIntro />
+      <ProjectsIntro interval={10000} />
       <ContactLinks />
       <Footer />
     </main>
