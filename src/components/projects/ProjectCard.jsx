@@ -19,7 +19,7 @@ const ProjectCard = ({ project, className = "", children }) => {
 
   return (
     <Card className={className}>
-      <div className="mb-1.75 flex items-end">
+      <div className="mb-1.75 flex items-end gap-2">
         <h1 className="text-primary flex-1 font-mono text-3xl font-bold select-text">
           {title}
         </h1>
@@ -32,7 +32,7 @@ const ProjectCard = ({ project, className = "", children }) => {
 
       <div className="mb-4 space-y-1">
         <p className="text-sm select-text">{desc}</p>
-        <div className="flex gap-1">
+        <div className="flex flex-wrap gap-1">
           {techUsed.map((t, i) => (
             <Badge key={i}>{t}</Badge>
           ))}

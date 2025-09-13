@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="sticky top-0 z-999 w-full">
-      <Container className="bg-background">
-        <nav className="flex justify-end gap-2 pt-2 pb-0.5">
+    <div className="border-text/30 sticky top-0 z-999 w-full border-b">
+      <Container className="bg-background/80 backdrop-blur-sm">
+        <nav className="flex justify-end gap-2 py-2">
           <Link href={"/projects"}>
             <Button tertiary>Projects</Button>
           </Link>
@@ -15,7 +15,6 @@ const Header = () => {
           </Link>
         </nav>
       </Container>
-      <div className="to-background h-5 w-full bg-gradient-to-t from-transparent" />
     </div>
   );
 };
