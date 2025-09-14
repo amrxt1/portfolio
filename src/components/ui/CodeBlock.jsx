@@ -7,7 +7,7 @@ const CodeBlock = ({
   selfClass = "",
 }) => {
   return (
-    <Card className={selfClass}>
+    <Card className={`font-mono ${selfClass}`}>
       <h2>
         <span>root@portfolio:~</span> {cmd}
       </h2>
