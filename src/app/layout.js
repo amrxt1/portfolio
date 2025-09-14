@@ -13,10 +13,36 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "amritveer singh",
+  title: {
+    default: "amrit's portfolio",
+    template: "%s | amrit's portfolio",
+  },
   description: "amritveer singh portfolio website",
+  keywords: [
+    "",
+    "amritveer",
+    "amritveer singh",
+    "amritv",
+    "portfolio",
+    "vancouver",
+  ],
   icons: {
     icon: "/icon.svg",
+  },
+  openGraph: {
+    title: "amritveer singh",
+    description: "Portfolio website of Amritveer Singh",
+    url: "https://amritv.space",
+    siteName: "amritv.space",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
   },
 };
 
