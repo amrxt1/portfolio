@@ -8,7 +8,7 @@ function TextLink({ external = false, href = "", className = "", children }) {
       href={href}
       className={`text-primary cursor-pointer md:hover:underline ${className}`}
       target={external ? "_blank" : "_self"}
-      rel="noopener noreferrer"
+      rel={external ? "noopener noreferrer" : ""}
     >
       {children}
     </Link>

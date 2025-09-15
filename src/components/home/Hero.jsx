@@ -17,8 +17,15 @@ const Hero = () => {
           <h3 className="mt-1">
             i hex bits into{" "}
             <TypeWriter
-              strings={["web applications", "cpu(s)", "assembler"]}
-              letterInterval={170}
+              strings={[
+                "web applications",
+                "react interfaces",
+                "apis",
+                "cpu cores",
+                "assemblers",
+                "algorithms",
+              ]}
+              letterInterval={96}
               wordInterval={1700}
               primary
             />

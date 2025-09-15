@@ -14,6 +14,10 @@ function advanceProject(setProject) {
   setProject((prev) => (prev === projectsData.length - 1 ? 0 : prev + 1));
 }
 
+function reduceProject(setProject) {
+  setProject((prev) => (prev === 0 ? projectsData.length - 1 : prev - 1));
+}
+
 const ProjectsIntro = ({ projectInterval = 4000, cmdInterval = 100 }) => {
   const [currentProject, setProject] = useState(0);
   const { slug } = projectsData[currentProject];
@@ -60,41 +64,56 @@ const ProjectsIntro = ({ projectInterval = 4000, cmdInterval = 100 }) => {
             <Button primary>View all</Button>
           </Link>
         </div>
-        <CodeBlock
-          childClass="mt-4 font-sans"
-          selfClass="font-mono bg-surface/50"
-          cmd={showCmd}
-        >
-          {renderProject ? (
-            <div className="bg-background aspect-4/3 animate-pulse rounded-lg p-4"></div>
-          ) : (
-            <ProjectCard
-              project={projectsData[currentProject]}
-              className="relative aspect-4/3 overflow-clip overflow-x-auto"
-            >
-              <motion.div
-                key={currentProject}
-                initial={{ opacity: 0.8 }}
-                animate={{
-                  opacity: 0,
-                  transition: { duration: 0.5, ease: "easeOut" },
-                }}
-                className="bg-background pointer-events-none absolute inset-0 z-20 w-full"
-              />
-            </ProjectCard>
-          )}
-        </CodeBlock>
-        <Button
-          onClick={() => {
-            setCmdIndex(0);
-            setCmd("");
-            advanceProject(setProject);
-          }}
-          className="mt-4"
-          tertiary
-        >
-          Next
-        </Button>
+        <div>
+          <CodeBlock
+            childClass="mt-4 font-sans"
+            selfClass="font-mono bg-surface/50"
+            cmd={showCmd}
+          >
+            {renderProject ? (
+              <div className="bg-background aspect-square animate-pulse rounded-lg p-4 md:aspect-4/3"></div>
+            ) : (
+              <ProjectCard
+                project={projectsData[currentProject]}
+                className="relative aspect-square overflow-x-auto md:aspect-4/3"
+              >
+                <motion.div
+                  key={currentProject}
+                  initial={{ opacity: 0.8 }}
+                  animate={{
+                    opacity: 0,
+                    transition: { duration: 0.5, ease: "easeOut" },
+                  }}
+                  className="bg-background pointer-events-none absolute inset-0 z-20 w-full"
+                />
+              </ProjectCard>
+            )}
+          </CodeBlock>
+        </div>
+        <div className="flex justify-between">
+          <Button
+            onClick={() => {
+              setCmdIndex(0);
+              setCmd("");
+              reduceProject(setProject);
+            }}
+            className="mt-4"
+            tertiary
+          >
+            Prev
+          </Button>
+          <Button
+            onClick={() => {
+              setCmdIndex(0);
+              setCmd("");
+              advanceProject(setProject);
+            }}
+            className="mt-4"
+            tertiary
+          >
+            Next
+          </Button>
+        </div>
       </div>
     </Container>
   );
