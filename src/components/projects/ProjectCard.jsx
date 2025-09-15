@@ -36,13 +36,17 @@ const ProjectCard = ({
           </div>
         </div>
         <div className="space-y-1.5">
-          <p className="text-sm select-text">{desc}</p>
+          <p className="text-sm select-text md:text-base">{desc}</p>
           <div className="flex flex-wrap gap-1">
             {techUsed.map((t, i) => (
               <Badge key={i}>{t}</Badge>
             ))}
           </div>
-          {showDetails && <div className="text-text/80 text-sm">{details}</div>}
+          {showDetails && (
+            <div className="text-text/80 text-sm select-text md:text-base">
+              {details}
+            </div>
+          )}
         </div>
       </div>
 

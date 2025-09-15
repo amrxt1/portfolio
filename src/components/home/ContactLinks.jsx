@@ -21,7 +21,7 @@ function ContactButton({ link }) {
 
 const ContactLinks = () => {
   return (
-    <Container>
+    <Container className="py-24">
       <h3 className="text-primary mb-4 text-center text-2xl font-bold">
         Let's Work Together
       </h3>
