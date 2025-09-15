@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: {
-    default: "amrit's portfolio",
-    template: "%s | amrit's portfolio",
+    default: "amritveer singh",
+    template: "%s | amritveer singh",
   },
   description: "amritveer singh portfolio website",
   keywords: [

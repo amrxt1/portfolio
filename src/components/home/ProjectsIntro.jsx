@@ -76,6 +76,7 @@ const ProjectsIntro = ({ projectInterval = 4000, cmdInterval = 100 }) => {
               <ProjectCard
                 project={projectsData[currentProject]}
                 className="relative aspect-square overflow-x-auto md:aspect-4/3"
+                showDetails
               >
                 <motion.div
                   key={currentProject}

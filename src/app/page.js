@@ -6,7 +6,7 @@ import Footer from "@/components/home/Footer";
 
 export default function Home() {
   return (
-    <main className="space-y-64">
+    <main className="space-y-32">
       <Hero />
       <AboutMe />
       <ProjectsIntro projectInterval={10000} cmdInterval={25} />
